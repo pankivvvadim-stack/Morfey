@@ -1,5 +1,5 @@
 name: morpheus
-description: Сонник Морфей
+description: A new Flutter project.
 publish_to: 'none'
 version: 1.0.0+1
 
@@ -10,5 +10,9 @@ dependencies:
   flutter:
     sdk: flutter
 
+dev_dependencies:
+  flutter_lints: ^4.0.0
+
 flutter:
   uses-material-design: true
+
