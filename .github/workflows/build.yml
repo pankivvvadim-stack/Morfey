@@ -15,8 +15,11 @@ jobs:
       - uses: subosito/flutter-action@v2
         with:
           channel: stable
-      - name: Analyze code
-        run: flutter analyze || true
+      
+      # ЭТА СТРОКА ПОКАЖЕТ ОШИБКИ В КОДЕ ОТДЕЛЬНЫМ БЛОКОМ
+      - name: Check for Dart errors
+        run: flutter analyze
+      
       - run: flutter create .
       - run: flutter pub get
       - run: flutter build apk --debug
